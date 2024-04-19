@@ -11,3 +11,27 @@
 
     
 }
+
+.header {
+    /* container grid start end */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /*  */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+
+}
+
+.top-header {
+    /* header grid start end */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*  */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
