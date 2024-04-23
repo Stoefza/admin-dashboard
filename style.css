@@ -20,8 +20,8 @@ body {
 
 .container {
 	display: grid;
-	grid-template-columns: 1fr 5fr;
-	grid-template-rows: 1fr 5fr;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: 1fr auto;
 	/* padding-left: 50px; */
 	/* padding-right: 50px; */
 }
@@ -29,7 +29,7 @@ body {
 .header {
 	/* container grid start end */
 	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column-end: 4;
 	/*  */
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -179,7 +179,7 @@ body {
 .my-tweets {
 	/* content-section grid position */
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 3;
 	/*  */
@@ -216,10 +216,14 @@ body {
 	fill: var(--accent1);
 }
 
+.right-bar {
+ grid-template-rows: auto;
+ background-color: var(--background);
+ padding: 1rem 2rem;
+}
+
 .announcements {
-	/* content-section grid position */
-	grid-area: 1 2 2 3;
-	/*  */
+
 }
 
 .announcement-cards {
@@ -250,9 +254,7 @@ p {
 }
 
 .trending {
-	/* content-section grid position */
-	grid-area: 2 2 3 3;
-	/*  */
+
 }
 
 .trending-cards {
